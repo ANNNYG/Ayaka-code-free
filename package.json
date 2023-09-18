@@ -9,8 +9,14 @@
     "build-only": "vite build",
     "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions \"src/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md|vue)\"",
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "lint:style": "stylelint **/*.{vue,css}",
     "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*": "prettier --write",
+    "*.{vue,ts}": "eslint --fix",
+    "*.{html,vue,css,sass,scss}": "stylelint --fix"
   },
   "dependencies": {
     "pinia": "^2.1.4",
@@ -20,13 +26,21 @@
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
+    "@rushstack/eslint-patch": "^1.4.0",
     "@tsconfig/node18": "^18.2.0",
     "@types/node": "^18.17.0",
     "@vitejs/plugin-vue": "^4.2.3",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "@vue/eslint-config-typescript": "^12.0.0",
     "@vue/tsconfig": "^0.4.0",
     "cspell": "^7.3.6",
+    "eslint": "8.49.0",
+    "eslint-plugin-cypress": "^2.14.0",
+    "eslint-plugin-vue": "^9.17.0",
     "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
     "npm-run-all": "^4.1.5",
+    "prettier": "^3.0.3",
     "stylelint": "^15.10.3",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-prettier": "^9.0.5",
