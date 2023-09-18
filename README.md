@@ -15,6 +15,7 @@
 - [husky](https://typicode.github.io/husky/#/) git钩子
 - [commitlint](https://commitlint.js.org/#/) git提交规范
 - [lint-staged](https://github.com/okonet/lint-staged) git提交前检查
+- [cz-git](https://cz-git.qbb.sh/zh/) git提交交互式命令行工具
 
 ### eslint
 
