@@ -9,7 +9,8 @@
     "build-only": "vite build",
     "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions \"src/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md|vue)\"",
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
-    "lint:style": "stylelint **/*.{vue,css}"
+    "lint:style": "stylelint **/*.{vue,css}",
+    "prepare": "husky install"
   },
   "dependencies": {
     "pinia": "^2.1.4",
@@ -17,11 +18,14 @@
     "vue-router": "^4.2.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "@tsconfig/node18": "^18.2.0",
     "@types/node": "^18.17.0",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue/tsconfig": "^0.4.0",
     "cspell": "^7.3.6",
+    "husky": "^8.0.3",
     "npm-run-all": "^4.1.5",
     "stylelint": "^15.10.3",
     "stylelint-config-html": "^1.1.0",

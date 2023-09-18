@@ -9,3 +9,4 @@
 使用到的规范库
 
 - [stylelint](https://stylelint.io/)
+- [cspell](https://cspell.org/)
