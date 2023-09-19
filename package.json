@@ -12,7 +12,8 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "lint:style": "stylelint **/*.{vue,css}",
     "prepare": "husky install",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "commitlint": "commitlint --edit"
   },
   "config": {
     "commitizen": {
@@ -54,8 +55,10 @@
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard": "^34.0.0",
     "stylelint-config-vue": "^1.0.0",
+    "tsno": "^2.0.0",
     "typescript": "~5.1.6",
     "vite": "^4.4.6",
-    "vue-tsc": "^1.8.6"
+    "vue-tsc": "^1.8.6",
+    "zx": "^7.2.3"
   }
 }
