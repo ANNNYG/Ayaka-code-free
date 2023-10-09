@@ -26,9 +26,14 @@
     "*.{html,vue,css,sass,scss}": "stylelint --fix"
   },
   "dependencies": {
-    "pinia": "^2.1.4",
-    "vue": "^3.3.4",
-    "vue-router": "^4.2.4"
+    "@vue-flow/background": "1.2.0",
+    "@vue-flow/controls": "^1.1.0",
+    "@vue-flow/core": "1.22.3",
+    "@vue-flow/minimap": "1.2.0",
+    "pinia": "2.1.4",
+    "sass": "1.69.0",
+    "vue": "3.3.4",
+    "vue-router": "4.2.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
