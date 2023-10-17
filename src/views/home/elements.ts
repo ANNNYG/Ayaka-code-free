@@ -2,34 +2,29 @@ export const homeElements = [
   // 节点
   {
     id: '1',
-    type: 'input',
-    label: '无代码平台',
+    type: 'title',
     position: { x: 300, y: 100 },
-    events: {
-      click: () => {
-        console.log('id 1 click')
-      }
-    },
-    class: '__title_node__'
+    class: '__title_node__',
+    connectable: true
   },
   {
     id: '2',
     label: '画布式',
-    type: 'output',
+    type: 'canvas-type',
     position: { x: 100, y: 300 },
     class: '__canvas_node__ __base_node__'
   },
   {
     id: '3',
     label: '瀑布流',
-    type: 'output',
+    type: 'waterfalls-type',
     position: { x: 400, y: 400 },
     class: '__waterFalls_node__ __base_node__'
   },
   {
     id: '4',
     label: '网格式',
-    type: 'output',
+    type: 'grids-type',
     position: { x: 600, y: 250 },
     class: '__grids_node__ __base_node__'
   },
